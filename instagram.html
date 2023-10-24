@@ -6,7 +6,14 @@
     <title>Document</title>
 
 <style>
-.t40-1{
+.grid{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+.perfil{
   width: 110px;
   height: 200px;
   font-family: Arial, Helvetica, sans-serif;
@@ -17,29 +24,34 @@
 }
 
 .foto-perfil{
-  width: 80%;
+  width: 100%;
 }
+
 
 .nombre{
   margin-bottom: 0px;
   margin-top: 0px;
-  font-weight: bolder;
-  margin-left: 10px;  
+  font-weight: bold;
+  margin-left: 5px;  
 }
+
+.amigo-comun-fila{
+display: grid;
+grid-template-columns: 33px 1fr;
+align-items: center;
+}
+
 
 .foto-amigo{
   width: 20px;
   height: 20px;
-  border-radius: 60px;
-  display: inline-block;
-  vertical-align: middle;
+  border-radius: 60px; 
   margin-left: 6px;
 }
 
 .amigos{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 10px;
+ 
+  font-size: 8px;
   color: #686869;
 }
 
@@ -51,12 +63,10 @@
   border-radius: 4px;
   margin-left: 10px;
   cursor: pointer;
+  margin-top: 7px;
 }
 
-.grid{
-    display: grid;
-    grid-auto-columns: 150px 150px 150px;
-}
+
 
 
 </style>
@@ -82,6 +92,43 @@
         </button>
         
     </div>
+
+    <div class="grid">
+        <div class="perfil">
+        <img src="https://i.imgur.com/gYLFc1d.jpg" class="foto-perfil">
+       
+        <p class="nombre">
+            Oliver
+        </p>
+        
+       <div class="amigo-comun-fila">
+          <img src="https://i.imgur.com/KdgA4HF.jpg" class="foto-amigo">
+          <p class="amigos">2 mutual friends</p>
+        </div>
+        
+        <button class="agregar">
+          Add friend
+        </button>
+        
+    </div>
+
+    <div class="grid">
+        <div class="perfil">
+        <img src="https://i.imgur.com/zs2gUXw.jpg" class="foto-perfil">
+       
+        <p class="nombre">
+            Oliver
+        </p>
+        
+       <div class="amigo-comun-fila">
+          <img src="https://i.imgur.com/KdgA4HF.jpg" class="foto-amigo">
+          <p class="amigos">2 mutual friends</p>
+        </div>
+        
+        <button class="agregar">
+          Add friend
+        </button>
+
        
 
 
