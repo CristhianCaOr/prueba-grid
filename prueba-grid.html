@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 100px;
+}
+
+.perfil{
+width: 250px;
+height: 410px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto-perfil{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.nombre{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+.contenedor-amigos-comun{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amigo-foto{
+    width: 30px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.amigos{
+    font-size: 10px;
+    color: rgb(97, 97 ,97);
+}
+
+.boton{
+    margin-left: 30px;
+    border-style: none;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(1, 140, 210);
+    color: white;
+    font-size: large;
+   cursor: pointer;
+} 
+ 
+ 
+ </style>
+
+</head>
+<body>
+    
+<div class="grid">
+<div class="perfil">
+
+<img class="foto-perfil" src="https://i.imgur.com/q99A14D.jpg">
+
+<p class="nombre">Oliver</p>
+
+<div class="contenedor-amigos-comun">
+
+<img class="amigo-foto" src="https://i.imgur.com/KdgA4HF.jpg"> 
+<p class="amigos">2 mutual friends</p>
+</div>
+
+<button class="boton">
+    Add friend
+</button>
+</div>
+
+<div class="grid">
+    <div class="perfil">
+    
+    <img class="foto-perfil" src="https://i.imgur.com/gYLFc1d.jpg">
+    
+    <p class="nombre">Mimi</p>
+    
+    <div class="contenedor-amigos-comun">
+    
+    <img class="amigo-foto" src="https://i.imgur.com/KdgA4HF.jpg"> 
+    <p class="amigos">3 mutual friends</p>
+    </div>
+    
+    <button class="boton">
+        Add friend
+    </button>
+    </div>
+
+    <div class="grid">
+        <div class="perfil">
+        
+        <img class="foto-perfil" src="https://i.imgur.com/zs2gUXw.jpg">
+        
+        <p class="nombre">Rex</p>
+        
+        <div class="contenedor-amigos-comun">
+        
+        <img class="amigo-foto" src="https://i.imgur.com/KdgA4HF.jpg"> 
+        <p class="amigos">4 mutual friends</p>
+        </div>
+        
+        <button class="boton">
+            Add friend
+        </button>
+        </div>
+
+
+
+</div>
+
+
+</body>
+</html>
